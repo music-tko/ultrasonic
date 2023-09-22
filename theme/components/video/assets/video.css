@@ -1,0 +1,36 @@
+.Video_container {
+  height: 55vh;
+  position: relative;
+  z-index: -1;
+}
+.Video_container::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid #fff;
+}
+.Video_container::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #fff;
+}
+.Video_container__overlay img {
+  height: 55vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Video_container__playBtn {
+  top: 35%;
+  left: 45%;
+}/*# sourceMappingURL=video.css.map */

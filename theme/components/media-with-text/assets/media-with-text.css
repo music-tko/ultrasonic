@@ -1,0 +1,28 @@
+.MediaWithText_container iframe {
+  min-height: 50vh;
+}
+.MediaWithText_container__overlay::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-top: 100px solid #fff;
+}
+.MediaWithText_container__overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid #fff;
+}
+.MediaWithText_container__playBtn {
+  left: 40%;
+}/*# sourceMappingURL=media-with-text.css.map */

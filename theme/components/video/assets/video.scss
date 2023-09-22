@@ -1,0 +1,43 @@
+.Video{
+  &_container{
+    height: 55vh;
+    position: relative;
+    z-index: -1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -1px;
+      width: 0;
+      height: 0;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid transparent;
+      border-top: 100px solid #fff; 
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      right: -1px;
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-top: 100px solid transparent;
+      border-bottom: 100px solid #fff; 
+    }
+    
+    &__overlay{
+      img{
+        height: 55vh;
+        object-fit: cover;
+      }
+    }
+
+    &__playBtn {
+      top: 35%;
+      left: 45%;
+    }
+  }
+} 
